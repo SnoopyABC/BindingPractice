@@ -1,0 +1,32 @@
+{
+    "Customers" : [
+        {
+            "id": "IDCustomer1",
+            "CompanyName": "Company Name 1",
+            "CompanyAdress": "Company Adress 1",
+            "City": "Company City 1",
+            "Country": "Country1"
+        },
+        {
+            "id": "IDCustomer2",
+            "CompanyName": "Company Name 2",
+            "CompanyAdress": "Company Adress 2",
+            "City": "Company City 2",
+            "Country": "Country 2"
+        },
+        {
+            "id": "IDCustomer3",
+            "CompanyName": "Company Name 3",
+            "CompanyAdress": "Company Adress 3",
+            "City": "Company City 3",
+            "Country": "Country 3"
+        },
+        {
+            "id": "IDCustomer4",
+            "CompanyName": "Company Name 4",
+            "CompanyAdress": "Company Adress 4",
+            "City": "Company City 4",
+            "Country": "Country 4"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+<mvc:View controllerName="project2.controller.View1"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:semantic="sap.f.semantic"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    <semantic:SemanticPage id="page">
+        <semantic:titleHeading>
+            <!-- <ComboBox id="mainCombobox" selectionChange="onItemSelect">
+                <items>
+                    <core:Item id="comboboxItem1" text="IDCustomer1"></core:Item>
+                    <core:Item id="comboboxItem2" text="IDCustomer2"></core:Item>
+                    <core:Item id="comboboxItem3" text="IDCustomer3"></core:Item>
+                    <core:Item id="comboboxItem4" text="IDCustomer4"></core:Item>
+                </items>
+            </ComboBox> -->
+           <!-- <ComboBox id="mainCombobox" items="{mockModel>/Customers}" selectionChange="onSelectionChange">
+                <core:Item id="comboboxItem" text="{mockModel>id}" />
+            </ComboBox> -->
+            <ComboBox id="mainCombobox" selectionChange="onSelectionChange">
+            </ComboBox>
+        </semantic:titleHeading>
+        <semantic:content>
+            <f:SimpleForm id="simpleForm"
+                editable="true"
+                layout="ResponsiveGridLayout"
+                title="Element Binding"
+                singleContainerFullSize="false" >
+                <f:content>
+                    <Label text="Name" />
+                    <Input id="name" value="{mockModel>CompanyName}" 
+                        valueState="{= ${mockModel>CompanyName} === '' ? 'Warning' : 'None'}" 
+                        valueStateText="{= ${mockModel>CompanyName} === '' ? 'Name cant be empty' : 'None'}"/>
+                    <Label text="Adress" />
+                    <Input value="{mockModel>CompanyAdress}"></Input>
+                    <Label text="City" />
+                    <Input value="{mockModel>City}" />
+                    <Label text="Country" />
+                    <Input value="{mockModel>Country}" />
+                </f:content>
+		    </f:SimpleForm>
+        </semantic:content>
+    </semantic:SemanticPage>
+</mvc:View>
